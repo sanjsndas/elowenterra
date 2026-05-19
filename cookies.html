@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elowen Terra Sanctum | Cookies Policy — Digital Seed Consent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #fff9ef 0%, #fff3e0 100%);
+            color: #3e2a1f;
+            line-height: 1.5;
+        }
+
+        :root {
+            --gold: #f5b042;
+            --amber: #e67e22;
+            --sunrise: #ffb347;
+            --marigold: #ffca28;
+            --deep-orange: #d35400;
+            --sand: #fff2df;
+            --terracotta: #b64926;
+            --olive: #6b705c;
+            --honey: #f7d98c;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fae6cf;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--amber);
+            border-radius: 10px;
+        }
+
+        /* Navigation matching main site */
+        nav {
+            background: #fff7e8;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 2px solid var(--gold);
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--deep-orange);
+        }
+        .logo i {
+            color: var(--gold);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #5c3b1f;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--amber);
+        }
+
+        /* Cookie hero with crumb illustration feel */
+        .cookie-hero {
+            background: linear-gradient(115deg, #fae6cf70, #ffddb070), url('https://images.pexels.com/photos/1770809/oatmeal-cookie-biscuit-bakery-1770809.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+            min-height: 28vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 4px solid var(--gold);
+        }
+        .hero-overlay {
+            background: rgba(255, 248, 235, 0.92);
+            backdrop-filter: blur(2px);
+            padding: 1.5rem 2rem;
+            border-radius: 2rem;
+            max-width: 750px;
+            margin: 2rem;
+        }
+        .cookie-hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #b64926;
+        }
+        .cookie-hero h1 i {
+            color: var(--gold);
+            margin-right: 12px;
+        }
+        .cookie-hero p {
+            font-size: 1.15rem;
+            margin-top: 0.75rem;
+            color: #4a2e1e;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem;
+        }
+
+        .policy-card {
+            background: #fffef8;
+            border-radius: 40px;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.08);
+            padding: 2.5rem;
+            margin: 2rem 0;
+            border: 1px solid #ffdfaa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            border-left: 7px solid var(--amber);
+            padding-left: 1rem;
+            margin: 2rem 0 1.2rem 0;
+            color: #4a2a18;
+        }
+
+        .policy-card h2 {
+            font-size: 1.8rem;
+            color: #d35400;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        .policy-card h3 {
+            font-size: 1.4rem;
+            color: #b64926;
+            margin: 1.4rem 0 0.6rem 0;
+        }
+        .policy-card p {
+            margin-bottom: 1rem;
+            color: #3e2a1f;
+        }
+        .policy-card ul, .policy-card ol {
+            margin: 0.8rem 0 1.2rem 2rem;
+        }
+        .policy-card li {
+            margin: 0.4rem 0;
+        }
+        .highlight-box {
+            background: #fff3e4;
+            border-radius: 28px;
+            padding: 1.2rem 1.6rem;
+            margin: 1.5rem 0;
+            border-left: 5px solid var(--gold);
+            font-style: normal;
+        }
+        .data-badge {
+            display: inline-block;
+            background: #fbe9ce;
+            border-radius: 60px;
+            padding: 0.2rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #c25d2e;
+            margin-right: 0.6rem;
+        }
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fffaf2;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .cookie-table th, .cookie-table td {
+            border: 1px solid #ffe0bb;
+            padding: 12px 16px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .cookie-table th {
+            background-color: #f7e5d1;
+            color: #a4421c;
+            font-weight: 600;
+        }
+        .badge-cookie {
+            background: #f2d9bd;
+            color: #b64926;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            padding: 4px 10px;
+            display: inline-block;
+            font-weight: 600;
+        }
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #ffe0b5, transparent);
+        }
+        .footer {
+            background: #2e241f;
+            color: #fae6cf;
+            padding: 3rem 2rem 1.5rem;
+            margin-top: 3rem;
+        }
+        .footer-inner {
+            max-width: 1300px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+            gap: 2rem;
+        }
+        .footer a {
+            color: #ffc857;
+            text-decoration: none;
+        }
+        .footer i {
+            margin-right: 8px;
+            color: var(--gold);
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #5c4535;
+            font-size: 0.85rem;
+        }
+        .consent-toolbar {
+            background: #fff5e9;
+            border-radius: 60px;
+            padding: 0.8rem 1.5rem;
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            margin: 0.5rem 0 1rem;
+        }
+        .btn-cookie {
+            background: transparent;
+            border: 1px solid var(--amber);
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+            font-family: inherit;
+            color: #4a2e1e;
+        }
+        .btn-cookie-primary {
+            background: var(--amber);
+            color: white;
+            border: none;
+        }
+        .btn-cookie-primary:hover {
+            background: #c95f1a;
+            transform: scale(0.97);
+        }
+        .btn-cookie:hover {
+            background: #f0e2ce;
+        }
+        @media (max-width: 850px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .policy-card {
+                padding: 1.5rem;
+            }
+            .cookie-hero h1 {
+                font-size: 1.9rem;
+            }
+            .cookie-table th, .cookie-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo"><i class="fas fa-seedling"></i> Elowen Terra Sanctum</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+</nav>
+
+<section class="cookie-hero">
+    <div class="hero-overlay">
+        <h1><i class="fas fa-cookie"></i> Cookies Policy</h1>
+        <p>Sweet transparency with every crumb — we use only intentional cookies to enhance your garden journey, never to harvest your privacy.</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="policy-card">
+        <div style="margin-bottom: 1rem;">
+            <span class="data-badge"><i class="fas fa-calendar-alt"></i> Last updated: March 15, 2026</span>
+            <span class="data-badge"><i class="fas fa-seedling"></i> Cookie harvest — ethical & minimal</span>
+        </div>
+        <p><strong>Elowen Terra Sanctum</strong> (“we”, “us”, “Garden Keepers”) uses cookies and similar tracking technologies to cultivate a warm, functional, and personalized experience. This Cookies Policy explains what cookies are, which ones we plant on your device, and how you can manage your cookie preferences — because you are the true steward of your digital soil.</p>
+
+        <div class="highlight-box">
+            <i class="fas fa-apple-alt" style="color: #d35400; margin-right: 12px;"></i> <strong>Our philosophy:</strong> We treat cookies like companion plants — some are essential for growth (functional), others help us understand our ecosystem (analytics). We never use invasive “malicious” cookies or share data with unannounced third parties. No surprise ingredients.
+        </div>
+
+        <h2><i class="fas fa-question-circle"></i> 1. What Are Cookies?</h2>
+        <p>Cookies are tiny text files stored on your computer, tablet, or smartphone when you visit a website. They help the website remember your actions and preferences (like language, login state, or shopping cart) over a period of time, so you don’t have to re-enter them each visit. Think of them as small biodegradable tags that make your journey smoother.</p>
+
+        <h2><i class="fas fa-list-ul"></i> 2. Types of Cookies We Use</h2>
+        <p>Our digital sanctuary uses only necessary and respectful cookies, divided into these categories:</p>
+        <table class="cookie-table">
+            <thead>
+                <tr><th>Cookie Category</th><th>Purpose</th><th>Duration</th><th>Examples</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><span class="badge-cookie"><i class="fas fa-shield-alt"></i> Strictly Necessary</span></td><td>Essential for site navigation, security, and core features (e.g., accessing protected areas, cookie consent memory). Without these, the garden may not function properly.</td><td>Session / up to 1 year</td><td>Cookie consent preferences, CSRF tokens</td></tr>
+                <tr><td><span class="badge-cookie"><i class="fas fa-chart-line"></i> Performance & Analytics</span></td><td>Help us understand how visitors interact with our pages (most loved articles, which plant guides flourish). All data is aggregated and anonymized.</td><td>Up to 24 months</td><td>Google Analytics (_ga, _gid), anonymized referrer data</td></tr>
+                <tr><td><span class="badge-cookie"><i class="fas fa-palette"></i> Functional Preferences</span></td><td>Remember your choices like preferred language, region, or if you’ve dismissed a seasonal banner — to give you a tailored experience.</td><td>Up to 12 months</td><td>language_selection, theme_pref</td></tr>
+                <tr><td><span class="badge-cookie"><i class="fas fa-share-alt"></i> Social / Embedded Content</span></td><td>Some pages may include embedded YouTube videos or Instagram posts — those platforms may set their own cookies. We limit these embeds and never initiate tracking without interaction.</td><td>Varies (third-party)</td><td>YouTube, Vimeo, Pinterest widgets</td></tr>
+            </tbody>
+        </table>
+        <p><strong>Important note:</strong> We do NOT use any advertising or targeting cookies for cross-site tracking, retargeting, or building marketing profiles. Your journey in our garden remains yours alone.</p>
+
+        <h2><i class="fas fa-cookie-bite"></i> 3. Detailed Cookie Inventory</h2>
+        <p>Below is a specific breakdown of individual cookies we commonly place when you interact with Elowen Terra Sanctum. This list is updated seasonally.</p>
+        <ul>
+            <li><strong>cookie_consent_accepted</strong> — Stores your cookie preference (essential, analytics, etc.). Expires in 1 year.</li>
+            <li><strong>session_id</strong> (strictly necessary) — Used for server session management, such as contact form submission. Expires when you close your browser.</li>
+            <li><strong>_ga, _ga_* (Google Analytics)</strong> — Helps us measure traffic and understand popular content. IP addresses are anonymized. Data retention: 26 months. You can opt out via <a href="#" id="ga-opt-out-link" style="color:#d35400;">our opt-out mechanism</a> or browser extensions.</li>
+            <li><strong>gardener_pref</strong> — Remembers if you prefer dark/light mode or larger font (accessibility). Expires in 6 months.</li>
+            <li><strong>last_visit_timestamp</strong> — Functional analytics to greet returning visitors. Expires after 30 days.</li>
+        </ul>
+        <div class="highlight-box">
+            <i class="fas fa-seedling"></i> <strong>Third-party Cookie disclosure:</strong> Our site may embed maps (OpenStreetMap) or video content from YouTube's privacy-enhanced mode. Those services may set cookies, but we limit their activation until user consent or click-to-load. See <a href="https://policies.google.com/technologies/cookies" target="_blank" style="color:#d35400;">Google's Cookie Policy</a> for details.
+        </div>
+
+        <h2><i class="fas fa-sliders-h"></i> 4. Your Cookie Choices — Control Panel</h2>
+        <p>You are the head gardener of your browser. You can manage or delete cookies in several ways:</p>
+        <ul>
+            <li>✧ <strong>Cookie Consent Banner:</strong> When you first visit, we display a lightweight banner allowing you to accept only necessary cookies or opt-in to analytics. Your preference is stored for 12 months.</li>
+            <li>✧ <strong>Browser settings:</strong> Most web browsers let you block or delete all cookies, or set alerts for when cookies are placed. Instructions vary: look under “privacy” or “site settings”.</li>
+            <li>✧ <strong>Global opt-out tools:</strong> You can enable “Do Not Track” (DNT) in your browser. We honor DNT signals by disabling non-essential analytics.</li>
+            <li>✧ <strong>Google Analytics Opt-out:</strong> Download the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:#d35400;">official Google Analytics Opt-out Browser Add-on</a>.</li>
+        </ul>
+        <div class="consent-toolbar" id="cookieControlMock">
+            <span><i class="fas fa-hand-peace"></i> <strong>Manage your cookie choices:</strong></span>
+            <button class="btn-cookie" id="acceptNecessaryBtn">☑️ Accept Necessary Only</button>
+            <button class="btn-cookie btn-cookie-primary" id="acceptAllAnalyticsBtn">🍪 Accept Analytics & Functional</button>
+            <button class="btn-cookie" id="resetCookiesPrefBtn">⟳ Reset preferences</button>
+        </div>
+        <p><small><i class="fas fa-info-circle"></i> The buttons above simulate preference management for demo/educational use. In a live environment, they would update your actual cookie consent status. On this page, clicking will store a preference in localStorage to demonstrate how consent works — your real preferences would be honored across the whole site.</small></p>
+
+        <h2><i class="fas fa-child"></i> 5. Cookies & Children’s Privacy</h2>
+        <p>We do not knowingly collect data from children under 13 through cookies. Any analytics data is aggregated and does not identify individual users regardless of age. Parents or guardians can delete cookie files using browser tools at any time.</p>
+
+        <h2><i class="fas fa-shield-virus"></i> 6. Security & Cookie Integrity</h2>
+        <p>All cookies we set are either “HttpOnly” (where possible) or secured with SameSite attributes to reduce risk of cross-site scripting. We never store sensitive personal data — like credit card details or passwords — inside cookies. Your security is part of our sacred practice.</p>
+
+        <h2><i class="fas fa-sync-alt"></i> 7. Updates to This Cookies Policy</h2>
+        <p>We may refresh this policy to align with new regulations or changes in our cookie usage. The “Last updated” date at the top will always reflect the latest revision. If we introduce new cookie categories, we will notify you via a prominent notice or email. Continued use of the site after changes constitutes acceptance, but you always retain control through your browser settings.</p>
+
+        <h2><i class="fas fa-envelope"></i> 8. Further Inquiries — Ask the Keeper</h2>
+        <p>If you have any questions about our use of cookies, or if you wish to raise a concern, please contact our Data Protection Gardener:</p>
+        <div class="highlight-box" style="background: #fff3e4;">
+            <i class="fas fa-leaf"></i> <strong>Elowen Terra Sanctum — Privacy Office</strong><br>
+            📍 127 Goldenvein Lane, Hollowbrook Valley, HV 87012, USA<br>
+            📧 <a href="mailto:privacy@elowenterrasanctum.garden" style="color:#d35400;">privacy@elowenterrasanctum.garden</a><br>
+            📞 +1 (558) 947-2638 (ask for Cookie Steward)<br>
+            🌿 Or visit our <a href="contact.html" style="color:#d35400;">Contact page</a> – subject “Cookies inquiry”.
+        </div>
+
+        <p style="margin-top: 1rem; font-size: 0.9rem;"><i class="fas fa-utensils"></i> This Cookies Policy is part of our holistic commitment to transparency, read in synergy with our <a href="privacy.html" style="color:#d35400;">Privacy Policy</a> and <a href="terms.html" style="color:#d35400;">Terms of Service</a>. Together they nourish trust like rain on new seedlings.</p>
+        
+        <hr>
+        <div style="font-style: italic; text-align: center; color: #8b694c;">
+            <i class="fas fa-cookie"></i> “Like a well-tended orchard, your digital footprint should bloom with dignity, not be picked without consent.”
+        </div>
+    </div>
+
+    <!-- decorative notice for cookie transparency -->
+    <div style="background: #fdf3e5; border-radius: 32px; padding: 1rem 2rem; text-align: center; margin-bottom: 1rem; border: 1px solid #f8daa8;">
+        <i class="fas fa-info-circle" style="color: #e67e22;"></i> 
+        <strong>Did you know?</strong> You can always delete existing cookies through your browser settings — just like composting old leaves. We encourage mindful data stewardship.
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div>
+            <h3><i class="fas fa-tree"></i> Elowen Terra Sanctum</h3>
+            <p>Where earth meets radiance — organic gardens, sacred seeds, and permaculture wisdom since 1987.</p>
+        </div>
+        <div>
+            <h4><i class="fas fa-location-dot"></i> Visit Us</h4>
+            <p>127 Goldenvein Lane,<br>Hollowbrook Valley, HV 87012<br><i class="fas fa-globe"></i> Sacred Garden District</p>
+        </div>
+        <div>
+            <h4><i class="fas fa-phone-alt"></i> Reach the Keepers</h4>
+            <p><i class="fas fa-phone"></i> <a href="tel:+15589472638">+1 (558) 947-2638</a><br>
+            <i class="fas fa-envelope"></i> hello@elowenterrasanctum.garden<br>
+            Mon-Fri: 9am–5pm (Garden Standard Time)</p>
+        </div>
+        <div>
+            <h4>Follow the Light</h4>
+            <p><i class="fab fa-instagram"></i> @elowen_sanctum<br><i class="fab fa-pinterest"></i> pinterest.com/elowengarden<br><i class="fab fa-youtube"></i> /TerraSanctumGrows</p>
+        </div>
+    </div>
+    <div class="copyright">
+        © 2026 Elowen Terra Sanctum — Cultivating joy through yellow & orange. | Address: 127 Goldenvein Lane, Hollowbrook Valley, HV 87012 | Phone: +1 (558) 947-2638 | <a href="privacy.html" style="color:#ffc857;">Privacy Policy</a> | <a href="cookies.html" style="color:#ffc857;">Cookies Policy</a>
+    </div>
+</footer>
+
+<script>
+    // Simulate cookie preference demonstration (lightweight, respects the "demo" but behaves like a functional consent tool)
+    (function() {
+        const CONSENT_KEY = "ets_cookie_preference";
+        // helper to show message toast? we'll just log but add a friendly alert? For better UX: small console + optional simulated update
+        function setPreference(choice) {
+            localStorage.setItem(CONSENT_KEY, choice);
+            // optional simulated flash message:
+            let msg = (choice === 'necessary') ? '🌿 Preference saved: Only necessary cookies will be used (analytics disabled).' : '🍪 Preference saved: Analytics & functional cookies enabled. Thanks for helping our garden grow!';
+            if(choice === 'reset') {
+                localStorage.removeItem(CONSENT_KEY);
+                msg = '♻️ Cookie preferences have been reset. Reload the page to reflect default banner state (demo).';
+            }
+            alert(msg);
+            console.log(`[Cookie Demo] Preference set to: ${choice}`);
+            // For extra realism: we could reload or simulate GA opt-out, but not needed.
+            if(choice === 'necessary') {
+                // mock ga disable: just console
+                console.log("GA would be disabled via gtag('consent', 'deny');");
+            } else if (choice === 'analytics') {
+                console.log("Analytics consent granted: GA would be enabled.");
+            }
+        }
+        const necessaryBtn = document.getElementById('acceptNecessaryBtn');
+        const analyticsBtn = document.getElementById('acceptAllAnalyticsBtn');
+        const resetBtn = document.getElementById('resetCookiesPrefBtn');
+        if(necessaryBtn) {
+            necessaryBtn.addEventListener('click', () => setPreference('necessary'));
+        }
+        if(analyticsBtn) {
+            analyticsBtn.addEventListener('click', () => setPreference('analytics'));
+        }
+        if(resetBtn) {
+            resetBtn.addEventListener('click', () => setPreference('reset'));
+        }
+        // optional: read existing pref and log if needed
+        const existing = localStorage.getItem(CONSENT_KEY);
+        if(existing) {
+            console.log(`Current cookie preference from localStorage: ${existing}`);
+        } else {
+            console.log("No cookie preference stored — default banner behavior (only necessary).");
+        }
+        // GA opt-out link simulation (mock)
+        const gaOptOut = document.getElementById('ga-opt-out-link');
+        if(gaOptOut) {
+            gaOptOut.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert("Google Analytics Opt-out simulation: In a live environment this would install GA opt-out add-on or disable tracking. For now, you can adjust your browser settings or use the 'Accept Necessary Only' button above.");
+                setPreference('necessary');
+            });
+        }
+    })();
+</script>
+</body>
+</html>
